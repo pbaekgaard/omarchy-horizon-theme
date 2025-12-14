@@ -1,0 +1,39 @@
+@define-color foreground #d5d8da;
+@define-color background #1c1e26;
+@define-color black   #666666;
+@define-color red     #e95678;
+@define-color green   #29d398;
+@define-color yellow  #fab795;
+@define-color blue    #26bbd9;
+@define-color magenta #ee64ac;
+@define-color cyan    #59e1e3;
+@define-color white   #e5e5e5;
+
+#workspaces button.active label {
+    color: @green;
+}
+
+#workspaces button:not(.empty):not(.active) label {
+  color: @red;
+}
+
+#battery.charging {
+    color: @green;
+}
+
+#battery:not(.charging) {
+    color: @yellow;
+}
+
+#battery.full {
+    color: @green;
+}
+
+#battery.warning:not(.charging) {
+    color: @red;
+}
+
+#bluetooth.connected {
+    color: @blue;
+}
+
